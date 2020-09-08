@@ -3,6 +3,14 @@ $username = "Mattias";
 $fulltimenow = date("d.m.y H:i:s");
 $partofday = "lihtsalt aeg";
 $hournow=date("H");
+$semesterstart = new DateTime("2020-8-31");
+$semesterend = new DateTime("2020-12-13");
+$semesterduration = $semesterstart->($semesterend);
+echo $semesterduration->format("%r&a");
+$today = new DateTime("now");
+
+
+
 if($hournow < 6){
 	$partofday = "unseaeg";
 }
